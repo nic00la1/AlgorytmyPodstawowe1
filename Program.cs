@@ -15,7 +15,7 @@ class Program
 
         // Sortowanie malejąco przez wybieranie
         Sorter sorter = new Sorter();
-        sorter.SortDescending(array);
+        sorter.SortowaniePrzezWybieranie(array);
 
         // Wyświetlenie posortowanej tablicy
         Console.WriteLine("Posortowana tablica:");

@@ -1,6 +1,6 @@
 public class Sorter
 {
-    public void SortDescending(int[] array)
+    public void SortowaniePrzezWybieranie(int[] array)
     {
         for (int i = 0; i < array.Length - 1; i++)
         {
