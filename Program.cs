@@ -23,5 +23,9 @@ class Program
         {
             Console.WriteLine(num);
         }
+
+        // Wyświetlenie największej wartości w tablicy
+
+        sorter.WyswietlNajwyzszaWartosc(array);
     }
 }
