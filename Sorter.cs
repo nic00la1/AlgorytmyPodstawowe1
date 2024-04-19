@@ -1,12 +1,14 @@
-/****************************************
- * nazwa funkcji: SortowaniePrzezWybieranie()
- * parametry wejœciowe: int[] array - tablica liczb ca³kowitych do posortowania malej¹co liczby
- * wartoœæ zwracana: funkcja zwraca posortowan¹ tablicê malej¹co
- * autor: Nicola Kaleta - klasa 3D
- ****************************************/
+
 
 public class Sorter
 {
+    /****************************************
+ * nazwa funkcji:WczytajDaneZKlawiatury()
+ * parametry wejœciowe: int[] array - tablica liczb ca³kowitych do posortowania malej¹co liczby
+ * wartoœæ zwracana: Funkcja zwraca tablicê liczb ca³kowitych, które s¹ wprowadzane przez u¿ytkownika z klawiatury
+ * 
+ * autor: Nicola Kaleta - klasa 3D
+ ****************************************/
     public void WczytajDaneZKlawiatury(int[] array)
     {
         for (int i = 0; i < array.Length; i++)
@@ -16,6 +18,17 @@ public class Sorter
         }
     }
 
+
+ /****************************************
+ * nazwa funkcji: SortowaniePrzezWybieranie()
+ * parametry wejœciowe: int[] array - tablica liczb ca³kowitych do posortowania malej¹co liczby
+ * wartoœæ zwracana: 
+ * Funkcja zwraca posortowan¹ tablicê malej¹co, czyli od najwiêkszej do najmniejszej liczby,
+ * za pomoca petli for, funkcja porównuje elementy tablicy i zamienia je miejscami
+ * jeœli kolejny element jest wiêkszy od aktualnego elementu, to zamienia je miejscami i przechodzi do kolejnego elementu
+ * 
+ * autor: Nicola Kaleta - klasa 3D
+ ****************************************/
     public void SortujPrzezWybieranie(int[] array)
     {
         for (int i = 0; i < array.Length - 1; i++)
@@ -36,6 +49,13 @@ public class Sorter
         }
     }
 
+    /****************************************
+ * nazwa funkcji: WyswietlPosortowanaTablice()
+ * parametry wejœciowe: int[] array - tablica liczb ca³kowitych do posortowania malej¹co liczby
+ * wartoœæ zwracana: Funkcja zwraca posortowan¹ tablicê liczb ca³kowitych w konsoli
+ * 
+ * autor: Nicola Kaleta - klasa 3D
+ ****************************************/
     public void WyswietlPosortowanaTablice(int[] array)
     {
         Console.WriteLine("Posortowana tablica:");
@@ -45,6 +65,13 @@ public class Sorter
         }
     }
 
+    /****************************************
+ * nazwa funkcji:WyswietlNajwyzszaWartosc()
+ * parametry wejœciowe: int[] array - tablica liczb ca³kowitych do posortowania malej¹co liczby
+ * wartoœæ zwracana: Funkcja zwraca najwiêksz¹ wartoœæ z tablicy liczb ca³kowitych w konsoli
+ * 
+ * autor: Nicola Kaleta - klasa 3D
+ ****************************************/
     public void WyswietlNajwyzszaWartosc(int[] array)
     {
         int max = array[0];
